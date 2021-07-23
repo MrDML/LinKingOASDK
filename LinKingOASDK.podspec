@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingOASDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'LinKingOASDK Europe and America version'
 
 # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   s.dependency 'Beta-AppsFlyerFramework', '~> 6.0.2.174'
   s.dependency 'SDWebImage', '>= 5.0.0'
   s.dependency 'Toast', '~> 4.0.0'
-  s.dependency 'FBAudienceNetwork', '~> 6.5.0'
+  s.dependency 'FBAudienceNetwork', '~> 6.5.1'
   s.dependency 'IronSourceSDK','7.1.5.1.0'
   s.dependency 'IronSourceAdMobAdapter','4.3.23.0'
   s.dependency 'IronSourcePangleAdapter','4.3.3.1'
