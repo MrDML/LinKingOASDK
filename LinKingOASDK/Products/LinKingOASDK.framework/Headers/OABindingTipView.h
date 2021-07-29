@@ -11,8 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OABindingTipView : UIView
-@property (weak, nonatomic) IBOutlet UIButton *button_ignore;
-@property (weak, nonatomic) IBOutlet UIButton *button_binding;
+
 @property (nonatomic, copy)void(^closeAlterViewCallBack)(void);
 @property (nonatomic, copy)void(^ignoreCallBack)(void);
 @property (nonatomic, copy)void(^bindingAcccountCallBack)(void);
