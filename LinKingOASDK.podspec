@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingOASDK'
-  s.version          = '0.1.10'
+  s.version          = '1.0.1'
   s.summary          = 'LinKingOASDK Europe and America version'
 
 # This description is used to generate tags and improve search results.
@@ -34,16 +34,18 @@ TODO: Add long description of the pod here.
 
   s.vendored_frameworks = "LinKingOASDK/Products/LinKingOASDK.framework"
   s.resources = "LinKingOASDK/Assets/*.*"
+  s.dependency 'IQKeyboardManager', '~> 6.5.5'
+  s.dependency 'TPKeyboardAvoiding', '~> 1.3.4'
   s.dependency 'FBSDKLoginKit', '~> 11.0.1'
   s.dependency 'FBSDKShareKit', '~> 11.0.1'
   s.dependency 'Beta-AppsFlyerFramework', '~> 6.0.2.174'
   s.dependency 'SDWebImage', '>= 5.0.0'
   s.dependency 'Toast', '~> 4.0.0'
-  s.dependency 'FBAudienceNetwork', '~> 6.5.1'
-  s.dependency 'IronSourceSDK','7.1.5.1.0'
-  s.dependency 'IronSourceAdMobAdapter','4.3.23.0'
-  s.dependency 'IronSourcePangleAdapter','4.3.3.1'
   s.dependency 'AFNetworking', '~> 4.0.1'
+  s.dependency 'IronSourceSDK','7.1.10.0'
+  s.dependency 'IronSourceAdMobAdapter','4.3.27.0'
+  s.dependency 'IronSourceFacebookAdapter','4.3.29.0'
+  s.dependency 'IronSourcePangleAdapter','4.3.8.0'
   s.xcconfig = {
       'VALID_ARCHS' =>  'arm64 x86_64 armv7',
   }

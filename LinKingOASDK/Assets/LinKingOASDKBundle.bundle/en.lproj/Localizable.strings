@@ -47,3 +47,33 @@
 "Dear player, you have not bound your account yet. In order to prevent the loss of game information and other issues, please bind your account as soon as possible."="Dear player, you have not bound your account yet. In order to prevent the loss of game information and other issues, please bind your account as soon as possible.";
 "Skip for now"="Skip for now";
 "Account binding"="Account binding";
+
+"Success"="Success";
+"Reset Password Success"="Reset Password Success";
+"Tourist"="Tourist";
+"Register"="Register";
+"Mailbox login"="Mailbox login";
+"Regain"="Regain";
+"Verification Code"="Verification Code";
+"Reset"="Reset";
+"Forgot password"="Forgot password";
+"Please enter your email account"="Please enter your email account";
+"Enter verification code"="Enter verification code";
+"Set Password"="Set Password";
+"Set Password again"="Set Password again";
+"Already have an account"="Already have an account";
+"Sing in"="Sing in";
+"Create an account"="Create an account";
+"Please enter verification code"="Please enter verification code";
+"Please enter password"="Please enter password";
+"Please enter valid password of 6 to 20 characters"="Please enter valid password of 6 to 20 characters";
+"The two passwords are different"="The two passwords are different";
+"Don't have an account! Register"="Don't have an account! Register";
+"Bind your linking account"="Bind your linking account";
+"Choose your platform"="Choose your platform";
+"Mailbox"="Mailbox";
+"Apple"="Apple";
+"Binding"="Binding";
+"Binding success"="Binding success";
+"Login now"="Login now";
+

@@ -1,19 +1,17 @@
 
-
-
-
-
-
-
-
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSBundle (LEAdditions)
-+ (NSBundle *)sls_pointEventNamef:(Class)aClass bundleName:(NSString *)bundleName;
-+ (NSString *)finishedEnter:(NSString *)key;
-+ (NSString *)finishedEnter:(NSString *)key value:(NSString *)value;
+@interface OAKeychain : NSObject
++ (OAKeychain *)sharedImageCache;
+
+- (UIImage *)searchImageFromMemoryWithURLString:(NSString*)urlStr;
+
+- (UIImage *)searceImageFromDiskWithURLStr:(NSString *)urlStr;
+
+- (void)downloadImageWithURLStr:(NSString *)urlStr withComplitionBlock:(void (^) (UIImage*image))block;
 @end
 
 NS_ASSUME_NONNULL_END

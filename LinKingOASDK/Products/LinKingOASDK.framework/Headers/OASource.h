@@ -1,19 +1,15 @@
 
 
-
-
-
-
-
-
-#import <Foundation/Foundation.h>
-
+#import "OAGameplaceholdbg.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OASource : NSObject
-+ (instancetype)shared;
-@property (copy, nonatomic) NSString * _Nullable preferredLanguage;
-@property (strong, nonatomic) NSBundle * _Nullable languageBundle;
+@class OATopWith;
+@interface OASource : OAGameplaceholdbg
++ (void)quickLoginComplete:(void(^)(NSError *error,OATopWith *user))complete;
++ (void)appleLoginWithToken:(NSString *)token complete:(void(^)(NSError * _Nullable error,OATopWith *_Nullable user))complete;
++ (void)facebookLoginWithToken:(NSString *)token complete:(void(^)(NSError * _Nullable error,OATopWith *_Nullable user))complete;
++ (void)googleLoginWithToken:(NSString *)token complete:(void(^)(NSError *_Nullable error,OATopWith *_Nullable user))complete;
++ (void)autoLoginComplete:(void(^)(NSError *error))complete;
 @end
 
 NS_ASSUME_NONNULL_END

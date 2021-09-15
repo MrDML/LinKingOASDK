@@ -42,3 +42,35 @@
 "Skip for now"="暂时跳过";
 "Account binding"="賬號綁定";
 
+
+"Success"="操作成功";
+"Reset Password Success"="重置密碼成功";
+"Tourist"="遊客";
+"Register"="註冊";
+"Mailbox login"="郵箱登入";
+"Regain"="重新獲取";
+"Verification Code"="驗證碼";
+"Reset"="重置";
+"Forgot password"="忘記密碼";
+"Please enter your email account"="請輸入你的郵箱賬號";
+"Enter verification code"="輸入驗證碼";
+"Set Password"="設置密碼";
+"Set Password again"="再次確認密碼";
+"Already have an account"="已經有賬號";
+"Sing in"="登入";
+"Create an account"="創建賬號";
+"Please enter verification code"="請輸入驗證碼";
+"Please enter password"="请输入密码";
+"Please enter valid password of 6 to 20 characters"="請輸入6到20個字符的有效密碼";
+"The two passwords are different"="兩次輸入密碼不一樣";
+"Don't have an account! Register"="還沒賬號! 註冊";
+"Bind your linking account"="綁定賬號";
+"Choose your platform"="選擇綁定的平台";
+"Mailbox"="郵箱";
+"Apple"="蘋果";
+"Login now"="登入賬號";
+"Login"= "登錄";
+"Binding email"="綁定郵箱";
+"Binding"="綁定";
+"Binding success"="綁定成功";
+

@@ -1,26 +1,22 @@
 
-
-
-
-
-
-
 #import <UIKit/UIKit.h>
-
+@class AFHTTPSessionManager;
 NS_ASSUME_NONNULL_BEGIN
-@class SKProduct;
+
 @interface OATracking : NSObject
-- (instancetype)initWithArray:(SKProduct *)product;
++(AFHTTPSessionManager *)sharedHttpSessionManager;
++ (void)getWithURLString:(NSString *)urlString success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 
-@property (nonatomic,copy) NSString *productId;
++ (void)getFromPhpithURLString:(NSString *)urlString success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 
-@property (nonatomic,copy) NSString *desc;
++ (void)postWithURLString:(NSString *)urlString parameters:(NSDictionary *)parameters success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 
-@property (nonatomic,copy) NSString *localizedTitle;
++ (void)postWithURLString:(NSString *)urlString parameters:(NSDictionary *)parameters HTTPHeaderField:(NSDictionary *)headerField success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 
-@property (nonatomic,copy) NSString *localizedDescription;
++ (void)uploadWithURLString:(NSString *)urlString withImages:(NSArray<UIImage *>*)images parameters:(NSDictionary *)parameters HTTPHeaderField:(NSDictionary *)headerField complete:(void(^)(NSError *error))complete;
 
-@property (nonatomic,strong) NSDecimalNumber *price;
+
++ (void)postNormalWithURLString:(NSString *)urlString parameters:(NSDictionary *)parameters HTTPHeaderField:(NSDictionary *)headerField success:(void(^)(id responseObject))success failure:(void(^)(NSError *error))failure;
 @end
 
 NS_ASSUME_NONNULL_END

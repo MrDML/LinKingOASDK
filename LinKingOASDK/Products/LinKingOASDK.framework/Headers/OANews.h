@@ -1,89 +1,16 @@
 
+#import "OAGameplaceholdbg.h"
+@class OATopWith;
 
+NS_ASSUME_NONNULL_BEGIN
 
+@interface OANews : OAGameplaceholdbg
 
-
-
-
-
-#import <UIKit/UIKit.h>
-
-@protocol TAPageControlDelegate;
-
-
-@interface OANews : UIControl
-
-
-
-
-
-
-
-@property (nonatomic) Class dotViewClass;
-
-
-
-
-@property (nonatomic) UIImage *dotImage;
-
-
-
-
-@property (nonatomic) UIImage *currentDotImage;
-
-
-
-
-@property (nonatomic) CGSize dotSize;
-
-
-@property (nonatomic, strong) UIColor *dotColor;
-
-
-
-@property (nonatomic) NSInteger spacingBetweenDots;
-
-
-
-
-
-
-
-
-@property(nonatomic,assign) id<TAPageControlDelegate> delegate;
-
-
-
-
-@property (nonatomic) NSInteger numberOfPages;
-
-
-
-
-@property (nonatomic) NSInteger currentPage;
-
-
-
-
-@property (nonatomic) BOOL hidesForSinglePage;
-
-
-
-
-@property (nonatomic) BOOL shouldResizeFromCenter;
-
-
-
-
-- (CGSize)sizeForNumberOfPages:(NSInteger)pageCount;
-
++ (void)appleBindingAccountWithToken:(NSString *)token complete:(void(^)(NSError *error,OATopWith *user))complete;
++ (void)googleBindingAccountWithToken:(NSString *)token complete:(void(^)(NSError *error,OATopWith *user))complete;
++ (void)facebookBindingAccountWithToken:(NSString *)token complete:(void(^)(NSError *error,OATopWith *user))complete;
++ (void)emailBindingAccountWithEmail:(NSString *)email code:(NSString *)code password:(NSString *)password  complete:(void(^)(NSError *error,OATopWith *user))complete;
 
 @end
 
-
-@protocol TAPageControlDelegate <NSObject>
-
-@optional
-- (void)OANews:(OANews *)pageControl didSelectPageAtIndex:(NSInteger)index;
-
-@end
+NS_ASSUME_NONNULL_END
