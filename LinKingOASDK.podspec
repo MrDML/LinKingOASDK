@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingOASDK'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'LinKingOASDK Europe and America version'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ TODO: Add long description of the pod here.
   s.dependency 'TPKeyboardAvoiding', '~> 1.3.4'
   s.dependency 'FBSDKLoginKit', '~> 11.0.1'
   s.dependency 'FBSDKShareKit', '~> 11.0.1'
-  s.dependency 'Beta-AppsFlyerFramework', '~> 6.0.2.174'
+  s.dependency 'AppsFlyerFramework', '~> 6.4.0'
   s.dependency 'SDWebImage', '>= 5.0.0'
   s.dependency 'Toast', '~> 4.0.0'
   s.dependency 'AFNetworking', '~> 4.0.1'
