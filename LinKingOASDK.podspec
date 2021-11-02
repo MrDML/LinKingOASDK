@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinKingOASDK'
-  s.version          = '1.0.11'
+  s.version          = '1.0.12'
   s.summary          = 'LinKingOASDK Europe and America version'
 
 # This description is used to generate tags and improve search results.
@@ -46,6 +46,11 @@ TODO: Add long description of the pod here.
   s.dependency 'IronSourceAdMobAdapter','4.3.27.0'
   s.dependency 'IronSourceFacebookAdapter','4.3.29.0'
   s.dependency 'IronSourcePangleAdapter','4.3.8.0'
+  s.dependency 'IronSourceUnityAdsAdapter','4.3.14.0'
+  s.dependency 'IronSourceTapjoyAdapter','4.1.18.0'
+  s.dependency 'IronSourceAdColonyAdapter','4.3.11.0'
+  s.dependency 'IronSourceVungleAdapter','4.3.13'
+
   s.xcconfig = {
       'VALID_ARCHS' =>  'arm64 x86_64 armv7',
   }
