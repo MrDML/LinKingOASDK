@@ -42,6 +42,8 @@ typedef void (^CompletionHandle)(PurchType type,NSError * _Nullable error);
 
 - (void)statrtProductWithId:(NSString *)productId parames:(NSDictionary *)parames completeHandle:(CompletionHandle)handle;
 
+- (void)statrtSubscribeProductWithId:(NSString *)productId parames:(NSDictionary *)parames completeHandle:(CompletionHandle)handle;
+
 @end
 
 NS_ASSUME_NONNULL_END
